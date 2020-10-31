@@ -1,0 +1,6 @@
+/.gradle
+/.idea
+/build
+/package-lock.json
+/out
+/node_modules
