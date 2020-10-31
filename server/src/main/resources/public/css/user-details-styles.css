@@ -1,0 +1,36 @@
+.user-loading-error {
+    color: red;
+}
+
+.user-details .user-loading,
+.user-details .user-loading-error,
+.user-details.loading .user-name,
+.user-details.error .user-name,
+.user-details.error .user-loading,
+.user-details.loading.error .user-loading {
+    display: none;
+}
+
+.user-details.loading .user-loading,
+.user-details.error .user-loading-error,
+.user-details .user-name {
+    display: inline;
+}
+
+.user-details.loading .blinker {
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
