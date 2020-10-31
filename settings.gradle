@@ -1,2 +1,2 @@
-rootProject.name = 'FileHub'
+rootProject.name = 'FileStore'
 include 'markup', 'server'
