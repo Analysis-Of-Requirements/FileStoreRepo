@@ -1,2 +1,2 @@
-# FileStoreRepo
-A cloud solution for storing your files.
+# FileStore
+A cloud solution for storing files.
