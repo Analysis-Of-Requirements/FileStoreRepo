@@ -1,0 +1,64 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": [
+    "jsdoc"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "plugin:jsdoc/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": [
+      "error", {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreUrls": true,
+        "ignorePattern": "goog\\.(module|require)"
+      }
+    ],
+    "linebreak-style": ["error", "windows"],
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off",
+    "padded-blocks": "warn",
+    "template-curly-spacing": ["error", "never"],
+    "no-new-func": "error",
+    "no-confusing-arrow": "error",
+    "no-useless-constructor": "error",
+    "no-duplicate-imports": "error",
+    "no-multi-assign": "error",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "eqeqeq": ["error", "always", {"null": "ignore"}],
+    "no-nested-ternary": "error",
+    "no-unneeded-ternary": "error",
+    "space-infix-ops": "error",
+    "no-whitespace-before-property": "error",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+    "space-in-parens": ["error", "never"],
+    "block-spacing": "error",
+    "prefer-promise-reject-errors": "warn",
+    "indent": ["error", 2, {"MemberExpression": 1}]
+  },
+  "settings": {
+    "jsdoc": {
+      "tagNamePreference": {
+        "returns": {
+          "message": "@return is considered to be a common way, rather than @returns",
+          "replacement": "return"
+        }
+      }
+    }
+  }
+}
