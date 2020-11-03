@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>File Explorer</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="application-box">
+    <a class="logo" href="/" title="FileStore"><img src="images/filestore.png" alt="FileStore"></a>
+
+    <ul class="nav-list">
+        <li>
+            <span class="glyphicon glyphicon-user"></span> Yehor
+        </li>
+        <li>
+            <a href="authentication.html" title="Log Out">
+                Log Out <span class="glyphicon glyphicon-log-out"></span>
+            </a>
+        </li>
+    </ul>
+
+    <header class="header">
+        <h1><a href="file-explorer.html" title="File Explorer">File Explorer</a></h1>
+    </header>
+
+    <hr>
+
+    <main class="main">
+        <div class="menu">
+            <div class="breadcrumbs-container">
+                <div class="breadcrumbs">
+                    <div class="trail-icon">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                    </div>
+                    <div class="trail-name text-truncate">
+                        <strong title="Root">/ Root</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-actions">
+                <button class="button alternative-button" title="Create Folder">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Create Folder
+                </button>
+                <button class="button" title="Upload File">
+                    <span class="glyphicon glyphicon-upload"></span>
+                    Upload File
+                </button>
+            </div>
+        </div>
+
+        <table class="table">
+            <tbody>
+            <tr>
+                <td class="cell-type">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </td>
+                <td class="cell-icon">
+                    <span class="glyphicon glyphicon-folder-close"></span>
+                </td>
+                <td class="cell-name text-truncate">
+                    <a title="Documents" href="#">Documents</a>
+                </td>
+                <td class="cell-size">
+                    2 items
+                </td>
+                <td class="cell-actions">
+                    <a title="Upload" href="#"><span class="glyphicon glyphicon-upload"></span></a>
+                    <a title="Remove" href="#"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="cell-type">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </td>
+                <td class="cell-icon">
+                    <span class="glyphicon glyphicon-folder-close"></span>
+                </td>
+                <td class="cell-name text-truncate">
+                    <a title="Images" href="#">Images</a>
+                </td>
+                <td class="cell-size">
+                    2 items
+                </td>
+                <td class="cell-actions">
+                    <a title="Upload" href="#"><span class="glyphicon glyphicon-upload"></span></a>
+                    <a title="Remove" href="#"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="cell-type">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </td>
+                <td class="cell-icon">
+                    <span class="glyphicon glyphicon-folder-close"></span>
+                </td>
+                <td class="cell-name text-truncate">
+                    <input class="input" type="text" name="name" value="Videos">
+                </td>
+                <td class="cell-size">
+                    1 item
+                </td>
+                <td class="cell-actions">
+                    <a title="Upload" href="#"><span class="glyphicon glyphicon-upload"></span></a>
+                    <a title="Remove" href="#"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="cell-type">
+                    <span class="glyphicon glyphicon-menu-right"></span>
+                </td>
+                <td class="cell-icon">
+                    <span class="glyphicon glyphicon-folder-close"></span>
+                </td>
+                <td class="cell-name text-truncate">
+                    <a title="Music" href="#">Music</a>
+                </td>
+                <td class="cell-size">
+                    2 items
+                </td>
+                <td class="cell-actions">
+                    <a title="Upload" href="#"><span class="glyphicon glyphicon-upload"></span></a>
+                    <a title="Remove" href="#"><span class="glyphicon glyphicon-remove-circle"></span></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <p class="center-text">Copyright &copy; 2020
+            <a href="/" title="FileStore">FileStore</a>. All rights reserved.
+        </p>
+    </footer>
+</div>
+</body>
+</html>
