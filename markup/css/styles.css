@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    background: #fff;
+    font: 14px / 18px Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #6bf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.glyphicon {
+    font-size: 20px;
+}
+
+.button {
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px 7px;
+    border: 1px solid #337ab7;
+    border-radius: 4px;
+    background: #337ab7;
+    color: #fff;
+    transition: border 0.3s, background 0.3s;
+}
+
+.button:hover {
+    background: #286192;
+    border: 1px solid #286192;
+    transition: border 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.button.alternative-button {
+    background: #fff;
+    color: #337ab7;
+}
+
+.button.alternative-button:hover {
+    background: #e5e5e5;
+    border: 1px solid #337ab7;
+}
+
+.button:focus, .input:focus {
+    outline: 0;
+}
+
+.button .glyphicon {
+    vertical-align: -3px;
+    margin-right: 5px;
+}
+
+.input[type=text], .input[type=password] {
+    height: 30px;
+    padding: 0 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    border: 1px solid #6bf;
+    box-shadow: 0 0 5px 0 #6bf;
+}
+
+.application-box {
+    width: 900px;
+    margin: 100px auto 0;
+    padding: 20px 20px 15px;
+    position: relative;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #aaa;
+}
+
+.form-box {
+    width: 460px;
+}
+
+.logo img {
+    height: 70px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+.nav-list {
+    position: absolute;
+    top: -34px;
+    right: 20px;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 0 7px 0;
+    border-left: 1px solid #000;
+}
+
+.nav-list .glyphicon {
+    font-size: 12px;
+}
+
+.nav-list li:first-child {
+    border: none;
+}
+
+.form-box .input-container {
+    width: 60%;
+    float: right;
+}
+
+.form-box .input-container .input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-box .form-row:after, .header:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.form-box .error-message {
+    color: #f00;
+}
+
+.form-box a.form-link {
+    margin-top: 6px;
+    float: right;
+}
+
+.form-box .form .form-row {
+    margin-bottom: 15px;
+}
+
+.form-box .form-row label {
+    width: 30%;
+    margin-top: 6px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-box .form > .form-row:last-child {
+    margin-bottom: 0;
+}
+
+.header {
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.header .glyphicon {
+    float: right;
+}
+
+.main {
+    height: 59vh;
+    overflow-y: auto;
+}
+
+.main .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 10px 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+    font-size: 20px;
+}
+
+.main .trail-icon {
+    flex-basis: 50px;
+    text-align: center;
+}
+
+.main .trail-name {
+    flex-grow: 1;
+    width: 500px;
+    font-weight: bold;
+}
+
+.main .menu .breadcrumbs-container {
+    flex-basis: 300px;
+}
+
+.main .menu .breadcrumbs {
+    display: flex;
+    align-items: baseline;
+}
+
+.main .menu-actions {
+    flex-basis: 270px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table .input[type=text] {
+    width: 50%;
+}
+
+.table td a {
+    margin-right: 5px;
+}
+
+.table tr {
+    border-bottom: 1px solid #999;
+}
+
+.table tr:first-child {
+    border-top: 1px solid #999;
+}
+
+.table tr:hover {
+    background: #f5f5f5;
+}
+
+.table tr td, .table tr th {
+    padding: 12px 0;
+    vertical-align: middle;
+}
+
+.table .cell-type {
+    width: 35px;
+    text-align: center;
+}
+
+.table .cell-type .glyphicon-menu-right {
+    font-size: 12px;
+}
+
+.table .cell-icon {
+    width: 45px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.table .cell-name {
+    line-height: 30px;
+}
+
+.table .cell-size {
+    width: 130px;
+}
+
+.table .cell-actions {
+    width: 80px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.table .cell-actions .glyphicon-upload {
+    color: #6ebd4b;
+}
+
+.table .cell-actions .glyphicon-remove-circle {
+    float: right;
+    color: #cf1f2f;
+}
+
+.table .cell-actions .glyphicon-download {
+    color: #0b9fd9;
+}
+
+.table .cell-actions .glyphicon {
+    visibility: hidden;
+}
+
+.table tr:hover .cell-actions .glyphicon {
+    visibility: visible;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
