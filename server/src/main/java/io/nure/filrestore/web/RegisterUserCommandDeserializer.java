@@ -1,4 +1,4 @@
-package io.nure.filestore.web;
+package io.nure.filrestore.web;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

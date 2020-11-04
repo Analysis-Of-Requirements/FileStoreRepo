@@ -1,4 +1,4 @@
-package io.nure.filestore.storage;
+package io.nure.filrestore.storage;
 
 import com.google.errorprone.annotations.Immutable;
 import io.nure.filestore.api.Folder;

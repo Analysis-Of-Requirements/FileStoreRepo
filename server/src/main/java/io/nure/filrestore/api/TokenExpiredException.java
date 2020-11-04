@@ -1,8 +1,7 @@
 package io.nure.filrestore.api;
 
-
-import io.nure.filrestore.storage.ExpirationTime;
-import io.nure.filrestore.storage.LoggedInUserRecord;
+import io.nure.filestore.storage.ExpirationTime;
+import io.nure.filestore.storage.LoggedInUserRecord;
 
 /**
  * An exception that is thrown if {@link ExpirationTime} of

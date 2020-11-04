@@ -1,17 +1,15 @@
 package io.nure.filrestore.api;
 
-
-import io.nure.filrestore.storage.ExpirationTime;
-import io.nure.filrestore.storage.LoggedInUserRecord;
-import io.nure.filrestore.storage.LoggedInUsersStorage;
-import io.nure.filrestore.storage.Token;
-import java.util.Collection;
-import java.util.Optional;
+import io.nure.filestore.storage.ExpirationTime;
+import io.nure.filestore.storage.LoggedInUserRecord;
+import io.nure.filestore.storage.LoggedInUsersStorage;
+import io.nure.filestore.storage.Token;
 import org.slf4j.Logger;
 
+import java.util.Collection;
+import java.util.Optional;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static java.lang.String.format;
 import static java.time.Instant.now;
 import static org.slf4j.LoggerFactory.getLogger;
 

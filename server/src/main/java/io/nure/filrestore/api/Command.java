@@ -1,4 +1,4 @@
-package io.nure.filestore.api;
+package io.nure.filrestore.api;
 
 import io.nure.filestore.web.FileStoreWebApplication;
 

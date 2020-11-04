@@ -1,4 +1,4 @@
-package io.nure.filestore.api;
+package io.nure.filrestore.api;
 
 import io.nure.filestore.storage.UserRecord;
 import io.nure.filestore.storage.UserStorage;

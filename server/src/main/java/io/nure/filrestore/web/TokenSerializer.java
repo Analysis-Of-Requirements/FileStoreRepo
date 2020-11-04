@@ -4,7 +4,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
-import io.nure.filrestore.storage.Token;
+import io.nure.filestore.storage.Token;
+
 import java.lang.reflect.Type;
 
 /**

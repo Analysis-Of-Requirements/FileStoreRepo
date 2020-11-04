@@ -1,4 +1,4 @@
-package io.nure.filestore.storage;
+package io.nure.filrestore.storage;
 
 import com.google.errorprone.annotations.Immutable;
 
@@ -11,7 +11,7 @@ import static java.util.Objects.hash;
  * A unit of data, stored in {@link UserStorage}.
  */
 @Immutable
-public final class UserRecord implements Record<UserId> {
+public final class UserRecord implements java.lang.Record<UserId> {
 
     /**
      * An identifier of the user.

@@ -1,4 +1,4 @@
-package io.nure.filestore.api;
+package io.nure.filrestore.api;
 
 /**
  * Abstract base for process, that executes {@link Command}s.

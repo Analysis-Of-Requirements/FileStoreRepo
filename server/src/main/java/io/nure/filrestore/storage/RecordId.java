@@ -1,4 +1,4 @@
-package io.nure.filestore.storage;
+package io.nure.filrestore.storage;
 
 /**
  * Identifier of a {@link Record}. Identifies record among others in {@link Storage}.

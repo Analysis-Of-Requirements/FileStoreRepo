@@ -1,4 +1,4 @@
-package io.nure.filestore.storage;
+package io.nure.filrestore.storage;
 
 /**
  * Unit of data, stored in {@link Storage}.

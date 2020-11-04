@@ -1,6 +1,6 @@
 package io.nure.filrestore.web;
 
-import io.nure.filrestore.api.LoggedInUser;
+import io.nure.filestore.api.LoggedInUser;
 
 /**
  * The storage of currently {@link LoggedInUser}s. One {@link Thread} can have no more than one {@link LoggedInUser} at

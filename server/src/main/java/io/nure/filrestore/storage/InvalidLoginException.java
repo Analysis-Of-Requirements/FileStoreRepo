@@ -1,4 +1,4 @@
-package io.nure.filestore.storage;
+package io.nure.filrestore.storage;
 
 /**
  * An exception that is raised when {@link LoginName} is invalid or failed validation.

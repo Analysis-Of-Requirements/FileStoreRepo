@@ -2,8 +2,8 @@ package io.nure.filrestore.api;
 
 import com.google.errorprone.annotations.Immutable;
 import io.nure.filestore.storage.UserId;
-import java.util.Objects;
 
+import java.util.Objects;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static java.util.Objects.hash;

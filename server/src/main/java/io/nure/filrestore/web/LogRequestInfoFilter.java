@@ -1,11 +1,11 @@
 package io.nure.filrestore.web;
 
-import java.util.Arrays;
 import org.slf4j.Logger;
 import spark.Filter;
 import spark.Request;
 import spark.Response;
 
+import java.util.Arrays;
 
 import static java.lang.String.format;
 import static org.slf4j.LoggerFactory.getLogger;

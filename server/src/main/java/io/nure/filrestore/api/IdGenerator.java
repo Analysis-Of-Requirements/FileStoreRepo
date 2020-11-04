@@ -1,4 +1,4 @@
-package io.nure.filestore.api;
+package io.nure.filrestore.api;
 
 import org.slf4j.Logger;
 

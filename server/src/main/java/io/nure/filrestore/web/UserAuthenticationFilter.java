@@ -1,20 +1,18 @@
 package io.nure.filrestore.web;
 
+import io.nure.filestore.api.LoggedInUser;
+import io.nure.filestore.api.TokenExpirationProxy;
+import io.nure.filestore.api.TokenExpiredException;
+import io.nure.filestore.api.TokenNotFoundException;
+import io.nure.filestore.storage.LoggedInUserRecord;
+import io.nure.filestore.storage.LoggedInUsersStorage;
+import io.nure.filestore.storage.Token;
 import io.nure.filestore.storage.UserId;
 import io.nure.filestore.storage.UserRecord;
-import io.nure.filestore.web.ResponseStatus;
-import io.nure.filrestore.api.LoggedInUser;
-import io.nure.filrestore.api.TokenExpirationProxy;
-import io.nure.filrestore.api.TokenExpiredException;
-import io.nure.filrestore.api.TokenNotFoundException;
-import io.nure.filrestore.storage.LoggedInUserRecord;
-import io.nure.filrestore.storage.LoggedInUsersStorage;
-import io.nure.filrestore.storage.Token;
 import org.slf4j.Logger;
 import spark.Filter;
 import spark.Request;
 import spark.Response;
-
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.slf4j.LoggerFactory.getLogger;
@@ -100,8 +98,8 @@ public class UserAuthenticationFilter implements Filter {
     private Token readToken(Request request) {
 
         String tokenValue = request
-                .headers("Authentication")
-                .replaceAll("^\\s*Bearer\\s", "");
+            .headers("Authentication")
+            .replaceAll("^\\s*Bearer\\s", "");
 
         return new Token(tokenValue);
     }
