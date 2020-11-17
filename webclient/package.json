@@ -1,0 +1,30 @@
+{
+  "name": "filehub",
+  "version": "1.0.0",
+  "description": "A file explorer system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "qunit",
+    "eslint-init": "eslint --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YehorPytomets/FileHub.git"
+  },
+  "author": "YehorPytomets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YehorPytomets/FileHub/issues"
+  },
+  "homepage": "https://github.com/YehorPytomets/FileHub#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-jsdoc": "^22.1.0",
+    "fetch-mock": "^9.3.1",
+    "jsdoc": "^3.6.3",
+    "toastedjs": "0.0.2"
+  },
+  "dependencies": {}
+}

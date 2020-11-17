@@ -1,0 +1,47 @@
+.table tr.renaming .table-col-name p {
+    display: none;
+}
+
+.table tr.renaming .table-col-name input.input {
+    display: none;
+}
+
+.table tr.renaming .table-col-name .renaming-loader {
+    display: block;
+}
+
+.renaming-loader {
+    display: none;
+    width: 5rem;
+    overflow: hidden;
+    position: relative;
+    height: .5rem;
+    background: rgba(255, 255, 255, .25);
+}
+
+.renaming-loader::before {
+    content: '';
+    position: absolute;
+    left: -130%;
+    width: 100%;
+    height: 100%;
+    background: #6bf;
+    animation: progress 4s linear infinite;
+}
+
+@keyframes progress {
+    0% {
+        left: -130%;
+        background: #6bf;
+    }
+    50% {
+        left: 130%;
+        background: #6bf;
+    }
+    51% {
+        background: #6bf;
+    }
+    100% {
+        background: #6bf;
+    }
+}

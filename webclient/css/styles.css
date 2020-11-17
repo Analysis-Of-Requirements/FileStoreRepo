@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    background: #fff;
+    font: 12px / 18px Arial, Helvetica, sans-serif;
+}
+
+.application-box {
+    width: 900px;
+    margin: 100px auto 0;
+    padding: 30px 25px 15px;
+    position: relative;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #aaa;
+}
+
+.form-box {
+    width: 600px;
+    min-width: 600px;
+}
+
+.form-box .input-container {
+    width: 60%;
+}
+
+.form-box .input-container .input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-box .form-row:after, .header:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.form-box .error-message {
+    color: #f00;
+    min-height: 10px;
+}
+
+.form-box .input-container, .form-box a.form-link {
+    float: right;
+}
+
+.form-box a.form-link {
+    margin-top: 10px;
+}
+
+a {
+    color: #6bf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    font-size: 14px;
+    padding: 5px 10px 7px;
+    border: 1px solid #337ab7;
+    border-radius: 4px;
+    background: #337ab7;
+    color: #fff;
+    transition: border 0.3s, background 0.3s;
+}
+
+.button:hover {
+    background: #286192;
+    border: 1px solid #286192;
+    transition: border 0.3s, background 0.3s;
+    cursor: pointer;
+}
+
+.button.alternative-button {
+    background: #fff;
+    color: #337ab7;
+}
+
+.button.alternative-button:hover {
+    background: #e5e5e5;
+    border: 1px solid #337ab7;
+}
+
+.button:focus, .input:focus {
+    outline: 0;
+}
+
+.button .glyphicon {
+    vertical-align: -3px;
+    margin-right: 5px;
+}
+
+.button.loading,
+.button.alternative-button.loading {
+    width: inherit;
+    height: inherit;
+
+    background: #337ab7;
+    border: 1px solid #337ab7;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.2s;
+
+    background: linear-gradient(to right, #337ab7, #286192);
+    background-repeat:repeat-x;
+    animation:go 5s linear infinite;
+}
+
+@keyframes go{
+    0%{background-position:0;}
+    100%{background-position:200px 0;}
+}
+
+.header {
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.header h1 {
+    margin: 0 0 15px;
+}
+
+.input[type=text], .input[type=password] {
+    height: 30px;
+    padding: 0 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input:focus {
+    border: 1px solid #6bf;
+    box-shadow: 0 0 5px 0 #6bf;
+}
+
+.form-box .form-row label {
+    width: 30%;
+    margin-top: 6px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 0 7px 0;
+    border-left: 1px solid #000;
+}
+
+.nav-list .glyphicon {
+    font-size: 12px;
+}
+
+.nav-list li:first-child {
+    border: none;
+}
+
+.main {
+    height: 65vh;
+    min-height: 65vh;
+    overflow-y: auto;
+}
+
+.table {
+    width: 100%;
+}
+
+.table .input[type=text] {
+    width: 50%;
+}
+
+.table td a {
+    margin-right: 5px;
+}
+
+.main .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 10px 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+    font-size: 20px;
+}
+
+.table .menu, .glyphicon {
+    font-size: 20px;
+}
+
+.table tr {
+    border-bottom: 1px solid #999;
+}
+
+.table tr.deletion-in-progress {
+    color: grey;
+    background: #ebebeb;
+}
+
+.table tr.deletion-in-progress .glyphicon {
+    color: grey;
+}
+
+.table tr:hover {
+    cursor: pointer;
+}
+
+.table tr.deletion-in-progress:hover {
+    background: #ebebeb;
+}
+
+.table tr:hover:not(.selected-list-item) {
+    background: #f5f5f5;
+}
+
+.table tr.editing .table-col-name p {
+    display: none;
+}
+
+.table tr.editing .table-col-name input.input {
+    display: block;
+}
+
+.table tr.editing .table-col-name .renaming-loader {
+    display: none;
+}
+
+.table tr td, .table tr th {
+    padding: 12px 0;
+    vertical-align: middle;
+}
+
+.table .table-col-buttons .glyphicon {
+    visibility: hidden;
+}
+
+.table tr:hover .table-col-buttons .glyphicon {
+    visibility: visible;
+}
+
+.selected-list-item {
+    background: #ebebeb;
+}
+
+.main .cell-icons {
+    flex-basis: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .cell-name {
+    flex-grow: 1;
+    width: 500px;
+}
+
+.main .menu .breadcrumbs-container {
+    flex-basis: 300px;
+}
+
+.main .menu .breadcrumbs {
+    display: flex;
+    align-items: baseline;
+}
+
+.main .cell-actions {
+    flex-basis: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table .table-col-type,
+.table .table-col-icon {
+    width: 50px;
+}
+
+.table .table-col-size {
+    width: 200px;
+}
+
+.table .table-col-buttons {
+    width: 90px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.table .table-col-buttons .glyphicon {
+    visibility: hidden;
+}
+
+.table tr:hover .table-col-buttons .glyphicon {
+    visibility: visible;
+}
+
+.table .table-col-type {
+    text-align: center;
+}
+
+.table .table-col-type .glyphicon-menu-right {
+    font-size: 12px;
+}
+
+.table .table-col-buttons .glyphicon-upload {
+    color: #6ebd4B;
+}
+
+.table .table-col-buttons .glyphicon-remove-circle {
+    color: #cf1f2f;
+}
+
+.table .table-col-buttons .glyphicon-download {
+    color: #0b9fd9;
+}
+
+.table .table-col-buttons .table-col-button {
+    font-size: 100%;
+    font-family: inherit;
+    background: inherit;
+    border: 0;
+    padding: 0;
+    margin: auto 3px;
+    cursor: pointer;
+}
+
+.table-col-button:focus .glyphicon {
+    visibility: visible;
+}
+
+.table .table-col-name .paragraph {
+    color: #6bf;
+}
+
+.table .input {
+    display: none;
+}
+
+.header .glyphicon {
+    float: right;
+}
+
+.logo img {
+    display: inline;
+    height: 60px;
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+
+.nav-list {
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.footer hr {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.application-box form .form-row {
+    margin-bottom: 15px;
+}
+
+.application-box form > .form-row:last-child {
+    margin-bottom: 0;
+}
+
+.text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.error-text {
+    color: #f00;
+}

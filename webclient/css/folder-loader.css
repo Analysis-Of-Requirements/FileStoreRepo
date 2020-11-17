@@ -1,0 +1,17 @@
+.folder-loader {
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+}
+
+.folder-loader {
+    border: 3px solid #6bf;
+    border-top-color: #fff;
+    animation: spinner1 1000ms linear infinite;
+}
+
+@keyframes spinner1 {
+    to {
+        transform: rotate(360deg);
+    }
+}
