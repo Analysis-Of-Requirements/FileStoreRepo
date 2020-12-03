@@ -4,8 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import io.nure.filestore.storage.LoginName;
 import io.nure.filestore.storage.Password;
-import io.nure.filrestore.api.AuthenticateUser;
-import io.nure.filrestore.web.AuthenticateUserCommandDeserializer;
+import io.nure.filestore.api.AuthenticateUser;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
