@@ -6,11 +6,8 @@ import io.nure.filestore.storage.Password;
 import io.nure.filestore.storage.UserId;
 import io.nure.filestore.storage.UserRecord;
 import io.nure.filestore.storage.UserStorage;
-import io.nure.filrestore.api.AuthenticateUser;
-import io.nure.filrestore.api.Authentication;
-import io.nure.filrestore.api.UserNotAuthenticatedException;
-import io.nure.filrestore.storage.LoggedInUsersStorage;
-import io.nure.filrestore.storage.Token;
+import io.nure.filestore.storage.LoggedInUsersStorage;
+import io.nure.filestore.storage.Token;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

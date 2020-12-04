@@ -1,6 +1,5 @@
 package io.nure.filestore.storage;
 
-import io.nure.filrestore.storage.Token;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

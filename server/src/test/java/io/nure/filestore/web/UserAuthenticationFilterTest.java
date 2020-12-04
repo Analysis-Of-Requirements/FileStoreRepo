@@ -1,13 +1,11 @@
 package io.nure.filestore.web;
 
 import io.nure.filestore.storage.UserId;
-import io.nure.filrestore.api.LoggedInUser;
-import io.nure.filrestore.storage.ExpirationTime;
-import io.nure.filrestore.storage.LoggedInUserRecord;
-import io.nure.filrestore.storage.LoggedInUsersStorage;
-import io.nure.filrestore.storage.Token;
-import io.nure.filrestore.web.CurrentLoggedInUser;
-import io.nure.filrestore.web.UserAuthenticationFilter;
+import io.nure.filestore.api.LoggedInUser;
+import io.nure.filestore.storage.ExpirationTime;
+import io.nure.filestore.storage.LoggedInUserRecord;
+import io.nure.filestore.storage.LoggedInUsersStorage;
+import io.nure.filestore.storage.Token;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import spark.HaltException;
@@ -17,7 +15,7 @@ import spark.Response;
 
 import static com.google.common.truth.Truth.assertWithMessage;
 import static io.nure.filestore.api.IdGenerator.generateId;
-import static io.nure.filrestore.api.ExpirationTimeCreator.expireAfterDays;
+import static io.nure.filestore.api.ExpirationTimeCreator.expireAfterDays;
 import static java.lang.String.format;
 import static java.time.Instant.EPOCH;
 import static java.util.Arrays.stream;

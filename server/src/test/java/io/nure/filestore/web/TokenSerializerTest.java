@@ -2,8 +2,7 @@ package io.nure.filestore.web;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.nure.filrestore.storage.Token;
-import io.nure.filrestore.web.TokenSerializer;
+import io.nure.filestore.storage.Token;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
