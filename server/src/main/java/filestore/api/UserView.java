@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 import java.util.Optional;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static java.lang.String.format;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**

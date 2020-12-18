@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static java.lang.String.format;
 import static java.util.stream.Collectors.toCollection;
 import static org.slf4j.LoggerFactory.getLogger;
 

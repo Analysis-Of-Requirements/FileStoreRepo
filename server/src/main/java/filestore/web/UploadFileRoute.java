@@ -36,7 +36,6 @@ import static io.nure.filestore.web.ResponseStatus.FORBIDDEN;
 import static io.nure.filestore.web.ResponseStatus.INTERNAL_SERVER_ERROR;
 import static io.nure.filestore.web.ResponseStatus.NOT_FOUND;
 import static io.nure.filestore.web.ResponseStatus.SUCCESS;
-import static java.lang.String.format;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**

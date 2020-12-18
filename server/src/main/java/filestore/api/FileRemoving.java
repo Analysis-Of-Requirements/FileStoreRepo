@@ -14,23 +14,17 @@ public class FileRemoving implements ApplicationProcess {
     private final FileContentStorage fileContentStorage;
 
     public FileRemoving(FileMetadataStorage fileMetadataStorage, FileContentStorage fileContentStorage) {
-
         this.fileMetadataStorage = fileMetadataStorage;
         this.fileContentStorage = fileContentStorage;
     }
 
     public void handle(RemoveFile command) {
-
         FileId fileId = command.getFileId();
-
         Optional<FileMetadataRecord> fileMetadataRecord = fileMetadataStorage.delete(fileId);
-
         if (!fileMetadataRecord.isPresent()) {
             throw new FileNotFoundException(format("File with id %s was not found.", fileId));
         }
-
         Optional<FileContentRecord> fileContentRecord = fileContentStorage.delete(fileId);
-
         if (!fileContentRecord.isPresent()) {
             throw new FileNotFoundException(format("File with id %s was not found.", fileId));
         }

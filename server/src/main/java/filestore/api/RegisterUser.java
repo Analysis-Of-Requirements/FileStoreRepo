@@ -7,7 +7,6 @@ import io.nure.filestore.web.FileHubWebApplication;
 import org.slf4j.Logger;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static java.lang.String.format;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**

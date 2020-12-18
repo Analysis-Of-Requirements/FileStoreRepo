@@ -66,7 +66,7 @@ public class CreateFolder implements Command {
     @Override
     public String toString() {
         return "CreateFolder{" +
-            "parentFolderId=" + parentFolderId +
+            "folderId=" + parentFolderId +
             ", ownerId=" + ownerId +
             '}';
     }

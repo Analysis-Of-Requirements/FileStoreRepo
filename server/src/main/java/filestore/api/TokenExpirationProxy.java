@@ -10,7 +10,6 @@ import java.util.Collection;
 import java.util.Optional;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static java.lang.String.format;
 import static java.time.Instant.now;
 import static org.slf4j.LoggerFactory.getLogger;
 

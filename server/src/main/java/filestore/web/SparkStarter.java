@@ -117,7 +117,9 @@ public class SparkStarter {
             "/user",
             "/folder/:folderId/folder",
             "/folder/:folderId/file",
-            "/file/:fileId"
+            "/file/:fileId",
+            "/file/:fileId/content",
+            "/folder/rename"
         )
             .forEach(path -> before("/api" + path, new UserAuthenticationFilter(loggedInUsers)));
 
@@ -145,6 +147,12 @@ public class SparkStarter {
                 new UploadFileRoute(folderStorage, fileMetadataStorage, fileContentStorage));
             post("/logout", new LogOutRoute(loggedInUsers));
             delete("/file/:fileId", new RemoveFileRoute(fileMetadataStorage, fileContentStorage));
+            get("/file/:fileId/content", new GetFileContentRoute(fileContentStorage, fileMetadataStorage));
+            post("/folder/rename", new RenameFolderRoute(folderStorage));
+            post("/file/rename", new RenameFileRoute(fileMetadataStorage));
+            delete("/folder/:folderId", new RemoveFolderRoute(fileMetadataStorage,
+                    fileContentStorage,
+                    folderStorage));
         });
 
         if (logger.isInfoEnabled()) {

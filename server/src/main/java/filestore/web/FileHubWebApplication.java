@@ -1,13 +1,12 @@
 package filestore.web;
 
-import io.nure.filestore.storage.FileContentPostgresStorage;
-import io.nure.filestore.storage.FileMetadataPostgresStorage;
-import io.nure.filestore.storage.FolderPostgresStorage;
-import io.nure.filestore.storage.LoggedInUsersPostgresStorage;
+import io.nure.filestore.storage.FileContentStorage;
+import io.nure.filestore.storage.FileMetadataStorage;
+import io.nure.filestore.storage.FolderStorage;
+import io.nure.filestore.storage.LoggedInUsersStorage;
 import io.nure.filestore.storage.Storage;
-import io.nure.filestore.storage.UsersPostgresStorage;
+import io.nure.filestore.storage.UserStorage;
 import org.slf4j.Logger;
-import org.sql2o.Sql2o;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
@@ -27,13 +26,17 @@ public class FileHubWebApplication {
             logger.info("Call to FileHubWebApplication.run().");
         }
 
-        Sql2o sql2o = new Sql2o("jdbc:postgresql://localhost:5432/filestore", "postgres", "1234");
+        UserStorage userStorage = new UserStorage();
+        LoggedInUsersStorage loggedInUsersStorage = new LoggedInUsersStorage();
+        FolderStorage folderStorage = new FolderStorage();
+        FileMetadataStorage fileMetadataStorage = new FileMetadataStorage();
+        FileContentStorage fileContentStorage = new FileContentStorage();
         SparkStarter starter = new SparkStarter(
-                new UsersPostgresStorage(sql2o),
-                new LoggedInUsersPostgresStorage(sql2o),
-                new FolderPostgresStorage(sql2o),
-                new FileMetadataPostgresStorage(sql2o),
-                new FileContentPostgresStorage(sql2o)
+            userStorage,
+            loggedInUsersStorage,
+            folderStorage,
+            fileMetadataStorage,
+            fileContentStorage
         );
 
         starter.start();

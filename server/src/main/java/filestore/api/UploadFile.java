@@ -138,7 +138,7 @@ public class UploadFile implements Command {
             "fileName=" + fileName +
             ", mimeType=" + mimeType +
             ", fileSize=" + fileSize +
-            ", parentFolderId=" + parentFolderId +
+            ", folderId=" + parentFolderId +
             ", fileOwnerId=" + fileOwnerId +
             ", fileContent=" + fileContent +
             '}';
